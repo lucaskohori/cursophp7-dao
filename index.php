@@ -50,13 +50,25 @@ echo $aluno;*/
 
 ////////////////////////////////////
 //ATUALIZA DADOS DO BANCO DE DADOS
-
+/*
 $usuario = new Usuario();
 
 $usuario->loadById(7);
 
 $usuario->update("Rafael", "&@#¨%$");
 
+echo $usuario;*/
+
+/////////////////////////////////
+
+//DELETA DADOS DO BANCO DE DADOS
+$usuario = new Usuario();
+
+$usuario->loadById(11);
+
+$usuario->delete();
+
 echo $usuario;
+
 
 ?>
